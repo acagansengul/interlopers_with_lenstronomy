@@ -1,0 +1,35 @@
+parameter names (Table 2):
+['$\\theta_E$','$\\gamma$', '$x_1$ [arcsec]', '$x_2$ [arcsec]','$e_1$','$e_2$','$\\Gamma_1$','$\\Gamma_2$','$\\delta$ [arcsec]','$x_s$ [arcsec]','$y_s$ [arcsec]',
+ '$b_\mathrm{int}$ [mas]','$M_\mathrm{200}\, [10^{9}M_\odot]$','$c_{200}$','$x_\mathrm{int}$ [arcsec]','$y_\mathrm{int}$ [arcsec]','$z_\mathrm{int}$']
+
+
+The files in the folder wideprior has the following priors
+
+minimum:
+[0.42,1.2,-0.3,-0.3,-0.3,-0.3,-0.3,-0.3,0.01,-0.3,-0.3
+ 0.,0.0001,2.,-0.15,0.4,0.3]
+
+maximum:
+[0.55,3.0,0.3,0.3,0.3,0.3,0.3,0.3,0.5*np.sqrt(n_max+1),0.3,0.3
+ 35.,100.,150.,0.15,0.6,1.9]
+
+
+The file in the folder widesubpos has the following priors
+
+minimum:
+[0.42,1.2,-0.3,-0.3,-0.3,-0.3,-0.3,-0.3,0.01,-0.3,-0.3
+ 0.,0.0001,2.,-0.5,-0.3,0.3]
+
+maximum:
+[0.55,3.0,0.3,0.3,0.3,0.3,0.3,0.3,0.5*np.sqrt(n_max+1),0.3,0.3
+ 35.,100.,150.,0.5,0.7,1.9]
+
+The files in the narrowprior, narrowmask, mocks, and freeconcen have the following priors
+
+minimum:
+[0.43, 1.8,-0.3,-0.3,-0.3,-0.3,-0.3,-0.3,0.01,-0.3,-0.3
+ 0.,0.0001,2.,-0.15,0.4,0.3]
+
+maximum:
+[0.50, 2.7,+0.3,+0.3,+0.3,+0.3,+0.3,+0.3,0.45*np.sqrt(n_max+1),0.3,0.3
+ 35.,100.,150.,0.15,0.6,1.9]
